@@ -19,10 +19,10 @@
             </h1>
             <div class="space-y-4 text-lg leading-relaxed text-slate-400">
                 <p>
-                    I'm a 3rd-year Computer Science student at AGH University of Krakow, deeply focused on building scalable and maintainable backend systems. I enjoy diving into <span class="text-sky-400 font-medium">Clean Architecture (DDD)</span> and performance optimization.
+                    I'm a 4th-year Computer Science student at AGH University of Krakow, building my path as a Software Engineer with an end-to-end mindset. My primary focus is backend engineering within <span class="text-sky-400 font-medium">Java (Spring Boot)</span> and <span class="text-sky-400 font-medium">Python</span> ecosystems.
                 </p>
                 <p>
-                    I have a solid foundation in Frontend and DevOps and I am eager to expand my skills by working on complex, real-world projects.
+                    I enjoy diving into Hexagonal/Clean Architecture, event-driven microservices, database optimization, and CI/CD pipelines. Beyond the server-side, I have solid hands-on experience with Docker, React, and React Native.
                 </p>
             </div>
             
@@ -46,36 +46,45 @@
 
             <div class="space-y-8">
                 
+                <!-- InPost Smart Finder -->
                 <article class="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 hover:border-slate-700 transition-colors">
-                    <h3 class="text-xl font-bold text-white mb-3">Calorie Tracker App</h3>
+                    <h3 class="text-xl font-bold text-white mb-3">InPost Smart Finder</h3>
                     <p class="text-slate-400 mb-6 leading-relaxed">
-                        A production-ready system following Clean Architecture (DDD). Features a FastAPI backend with PostgreSQL and Redis for rate-limiting, paired with a React Native app using partial state updates.
+                        A high-performance full-stack web application for spatial querying of parcel lockers. Features a FastAPI backend integrated with a PostgreSQL+PostGIS database for lightning-fast bounding-box filtering on a map. Utilizes an asynchronous Redis/ARQ background worker to continuously sync data from the external InPost API without blocking the main thread.
                     </p>
+                    <p class="text-slate-400 mb-6 leading-relaxed">
+                        The frontend is built with React, Vite, and Leaflet, offering a mobile-first, performance-optimized UI. Fully containerized with Docker Compose and configured for Nginx reverse proxy deployment.
+                    </p>
+
+                    <div class="mb-6">
+                        <a href="https://github.com/mtrznadel24/Inpost-Smart-Finder" target="_blank" class="inline-flex px-5 py-2 bg-slate-800 hover:bg-slate-700 text-white font-medium rounded-lg transition-colors text-sm items-center gap-2 border border-slate-700">
+                            View on GitHub
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </a>
+                    </div>
+
                     <div class="flex flex-wrap gap-2">
                         <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-semibold rounded-full border border-slate-700">FastAPI</span>
-                        <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-semibold rounded-full border border-slate-700">PostgreSQL</span>
+                        <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-semibold rounded-full border border-slate-700">PostGIS</span>
+                        <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-semibold rounded-full border border-slate-700">React</span>
                         <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-semibold rounded-full border border-slate-700">Redis</span>
-                        <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-semibold rounded-full border border-slate-700">React Native</span>
-                        <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-semibold rounded-full border border-slate-700">Clean Architecture</span>
+                        <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-semibold rounded-full border border-slate-700">Docker</span>
                     </div>
                 </article>
 
+                <!-- Ticket Reservation System -->
                 <article class="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 hover:border-slate-700 transition-colors">
                     <h3 class="text-xl font-bold text-white mb-3">Ticket Reservation System</h3>
                     <p class="text-slate-400 mb-5 leading-relaxed">
-                        A professional-grade Django application refactored with a Service Layer to decouple business logic. Implements PostgreSQL Row-Level Locking for high-concurrency seat reservations and advanced ORM optimization to solve N+1 query problems. Leverages Celery for asynchronous background tasks (PDF generation) and cron-like scheduled maintenance.
+                        A professional-grade Django application refactored with a Service Layer to decouple business logic. Implements PostgreSQL Row-Level Locking for high-concurrency seat reservations and ORM optimization to solve N+1 query problems. Leverages Celery for asynchronous background tasks.
                     </p>
                     <p class="text-slate-400 mb-6 leading-relaxed">
-                        Features a fully automated GitHub Actions CI/CD pipeline for testing and deployment to a DigitalOcean Droplet via Nginx and Docker Compose. Integrated with Stripe API for secure payments and AES-256 encryption for personal data privacy.
+                        Features fully automated GitHub Actions CI/CD pipelines and Docker Compose deployment configuration behind Nginx. Integrated with Stripe API for secure payments and AES-256 encryption.
                     </p>
                     
-                    <div class="bg-slate-950 border border-slate-800 rounded-lg p-4 mb-6 flex items-center justify-between flex-wrap gap-4">
-                        <div class="text-sm font-mono text-slate-400">
-                            <span class="text-slate-500">Staff Login:</span> staff_user <br/>
-                            <span class="text-slate-500">Password:</span> Password123!
-                        </div>
-                        <a href="https://tickets.mtrznadel.me" target="_blank" class="px-5 py-2 bg-sky-600 hover:bg-sky-500 text-white font-medium rounded-lg transition-colors text-sm flex items-center gap-2">
-                            View Live Demo
+                    <div class="mb-6">
+                        <a href="https://github.com/mtrznadel24/ticket-reservation-system" target="_blank" class="inline-flex px-5 py-2 bg-slate-800 hover:bg-slate-700 text-white font-medium rounded-lg transition-colors text-sm items-center gap-2 border border-slate-700">
+                            View on GitHub
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                         </a>
                     </div>
@@ -88,27 +97,31 @@
                     </div>
                 </article>
 
+                 <!-- B.Sc. Thesis -->
                 <article class="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 hover:border-slate-700 transition-colors">
-                    <h3 class="text-xl font-bold text-white mb-3">InPost Smart Finder</h3>
+                    <h3 class="text-xl font-bold text-white mb-3">AI-Driven Cancer Treatment Planner (B.Sc. Thesis)</h3>
                     <p class="text-slate-400 mb-6 leading-relaxed">
-                        A high-performance full-stack web application for spatial querying of parcel lockers. Features a FastAPI backend integrated with a PostgreSQL+PostGIS database for lightning-fast bounding-box filtering on a map. Utilizes an asynchronous Redis/ARQ background worker to continuously sync data from the external InPost API without blocking the main thread.
+                        Co-developing the core platform and LLM integration for "Language-Driven Therapy Design"—an AI-powered medical planner developed as part of an NCN OPUS research grant at AGH University.
                     </p>
-                    <p class="text-slate-400 mb-6 leading-relaxed">
-                        The frontend is built with React, Vite, and Leaflet, offering a mobile-first, performance-optimized UI with i18n support. Fully containerized and deployed on a DigitalOcean Droplet behind an Nginx reverse proxy.
-                    </p>
-
-                    <div class="mb-6">
-                        <a href="https://smart-finder.mtrznadel.me" target="_blank" class="inline-flex px-5 py-2 bg-emerald-600 hover:bg-emerald-500 text-white font-medium rounded-lg transition-colors text-sm items-center gap-2">
-                            View Live Demo
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                        </a>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-semibold rounded-full border border-slate-700">AI / LLM</span>
+                        <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-semibold rounded-full border border-slate-700">Research</span>
+                        <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-semibold rounded-full border border-slate-700">Python</span>
                     </div>
+                </article>
 
+                <!-- Calorie Tracker App -->
+                <article class="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 hover:border-slate-700 transition-colors">
+                    <h3 class="text-xl font-bold text-white mb-3">Calorie Tracker App</h3>
+                    <p class="text-slate-400 mb-6 leading-relaxed">
+                        A production-ready system following Clean Architecture (DDD). Features a FastAPI backend with PostgreSQL and Redis for rate-limiting, paired with a React Native app using partial state updates.
+                    </p>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-semibold rounded-full border border-slate-700">FastAPI</span>
-                        <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-semibold rounded-full border border-slate-700">PostGIS</span>
-                        <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-semibold rounded-full border border-slate-700">React</span>
+                        <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-semibold rounded-full border border-slate-700">PostgreSQL</span>
                         <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-semibold rounded-full border border-slate-700">Redis</span>
+                        <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-semibold rounded-full border border-slate-700">React Native</span>
+                        <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-semibold rounded-full border border-slate-700">Clean Architecture</span>
                     </div>
                 </article>
 
